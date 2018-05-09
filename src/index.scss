@@ -1,5 +1,17 @@
-$main-color: skyblue;
-
+$main-color: powderblue;
 body {
   background-color: $main-color;
+}
+
+.board {
+  &__row {
+    display: flex;
+  }
+  &__col {
+    $col-width: 50px;
+    width: $col-width;
+    height: $col-width;
+    background: salmon;
+    margin: 5px;
+  }
 }
