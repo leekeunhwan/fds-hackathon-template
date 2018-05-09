@@ -35,11 +35,12 @@ class TicTacToe {
         return this.board[0][i];
       }
       if (this.board[i][i] !== null &&
-        (this.board[0][0] === this.board[i][i] ||
-          this.board[0][2] === this.board[i][i]) &&
-        this.board[1][1] === this.board[i][i] &&
-        (this.board[2][0] === this.board[i][i] ||
-          this.board[2][2] === this.board[i][i])) {
+        ((this.board[0][0] === this.board[i][i] &&
+            this.board[1][1] === this.board[i][i] &&
+            this.board[2][2] === this.board[i][i]) ||
+          (this.board[0][2] === this.board[i][i] &&
+            this.board[1][1] === this.board[i][i] &&
+            this.board[2][0] === this.board[i][i]))) {
         return this.board[i][i];
       }
     }
