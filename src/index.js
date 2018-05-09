@@ -73,6 +73,6 @@ function draw() {
   })
   const winner = game.checkWinner();
   if (winner) {
-    document.querySelector('.winner').textContent = winner;
+    document.querySelector('.winner').textContent = "승자는 " + winner + "입니다";
   }
 }

@@ -1,4 +1,4 @@
-$main-color: powderblue;
+$main-color: white;
 body {
   background-color: $main-color;
 }
@@ -13,5 +13,8 @@ body {
     height: $col-width;
     background: salmon;
     margin: 5px;
+  }
+  &__col:hover {
+    background: lightsalmon;
   }
 }
